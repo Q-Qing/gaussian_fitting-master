@@ -19,6 +19,6 @@ df_user = df.loc[df[' user ID'] == userid]
 total_days = df_user.shape[0]
 print("days:",total_days)
 
-dp = DataProcess(flag=True,input_df=df_user)
+dp = DataProcess(flag=False,input_df=df_user)
 df_prior = dp.setup()
 print(df_prior)
